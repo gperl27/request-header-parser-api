@@ -10,7 +10,7 @@ app.get('/', function(req,res){
     var language = req.headers["accept-language"].split(',');
     var os = req.headers['user-agent'].split(') ')[0].split(' (')[1];
     res.json({
-      'IP': ip.address(),
+      //'IP': ip.address(),
       'Language' : language[0],
       'OS' : os
     });
