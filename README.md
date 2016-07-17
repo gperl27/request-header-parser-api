@@ -1,22 +1,18 @@
-
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+#Request Header Parser API - FCC
+By Greg Perlman
 
 
-Welcome to your Node.js project on Cloud9 IDE!
+##User Stories:
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+> 1. I can get the IP address, language, and OS of my browser. 
 
-## Running the server
+##Example output:
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+<code>{
+  "IP": "xxx.xxx.xxx.xxx",
+  "Language": "en-US",
+  "OS": "Windows NT 10.0; WOW64"
+}</code>
 
-2) Alternatively you can launch the app from the Terminal:
+###Live Site:
 
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
