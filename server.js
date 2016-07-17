@@ -9,12 +9,11 @@ var port = process.env.PORT || 8080;
 app.get('/', function(req,res){
     var language = req.headers["accept-language"].split(',');
     var os = req.headers['user-agent'].split(') ')[0].split(' (')[1];
-    var info = {
+    res.json({
       'IP': ip.address(),
       'Language' : language[0],
       'OS' : os
-    };
-    res.send(info);
+    });
 
 });
 
